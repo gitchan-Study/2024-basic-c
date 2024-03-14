@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 short countLength(const char data[]);
 
@@ -16,9 +17,5 @@ void main() {
 }
 
 short countLength(const char data[]) {
-    short count;
-    while (data[count] != 0) {
-        count++;
-    }
-    return count;
+    return strlen(data);
 }
